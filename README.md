@@ -43,6 +43,9 @@ Your signature
 Internal deadline for corpus annotation: <b><u>17 March 2025</u></b>.
 CheckThat! 2025 deadline for test data release: <b><u>Mid-April 2025</u></b>.
 
+## Support
+If you have no experience in crawling news articles or programming, send us an email with the list of identified news articles and their URL. 
+We will provide you with the crawled news articles for annotation.
 
 ## Contact
 
