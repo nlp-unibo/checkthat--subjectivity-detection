@@ -9,7 +9,7 @@ on subjectivity detection.
 
 ## We need you!
 
-We kindly invite you and your team to help us annotate a small dataset (~300 sentences) in a specific language where you have proficiency (e.g. your native one).
+We kindly invite you and your team to help us collect and annotate a small dataset (~300 sentences) in a specific language where you have proficiency (e.g. your native one).
 
 ## Where to start?
 
