@@ -13,7 +13,8 @@ We kindly invite you and your team to help us collect and annotate a small datas
 
 ## Where to start?
 
-- Read `documents/Instructions.pdf`.
+- Read `documents/Instructions.pdf` for collecting data for annotation.
+- Read `documents/Guidelines.pdf` for annotation.
 
 ## How to contribute?
 
