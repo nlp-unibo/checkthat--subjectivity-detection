@@ -9,7 +9,7 @@ on subjectivity detection.
 
 ## We need you!
 
-We kindly invite you and your team to help us annotate a small dataset (~300 sentences) in a specific language where you have proficiency (e.g. your native one).
+We kindly invite you and your team to help us collect and annotate a small dataset (~300 sentences) in a specific language where you have proficiency (e.g. your native one).
 
 ## Where to start?
 
@@ -43,6 +43,9 @@ Your signature
 Internal deadline for corpus annotation: <b><u>17 March 2025</u></b>.
 CheckThat! 2025 deadline for test data release: <b><u>Mid-April 2025</u></b>.
 
+## Support
+If you have no experience in crawling news articles or programming, send us an email with the list of identified news articles and their URL. 
+We will provide you with the crawled news articles for annotation.
 
 ## Contact
 
