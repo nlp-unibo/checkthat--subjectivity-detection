@@ -8,15 +8,12 @@ def load_text(text_path: Path):
     with text_path.open('r') as f:
         article_data = json.load(f)
 
-    if 'sat_split' in article_data:
-        return None, None
-
     return article_data['text'], article_data
 
 
 def main():
-    model = 'sat-3l-sm'
-    language = 'el'
+    model = 'sat-6l-sm'
+    language = 'pl'
     base_path = Path('.', 'crawled', language).resolve()
 
     sat = SaT(model, language=language, style_or_domain='ud')
@@ -30,7 +27,7 @@ def main():
             continue
 
         sentences = [sent for sent in sat.split(text) if len(sent.strip())]
-        article_data['sat_split'] = sentences
+        article_data['sentences'] = sentences
 
         with text_path.open('w') as f:
             json.dump(article_data, f, indent=4)

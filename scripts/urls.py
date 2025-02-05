@@ -17,7 +17,9 @@ def get_polish_urls():
         "https://www.rp.pl/kraj/art37748781-coraz-trudniej-sforsowac-granice-po-postawieniu-plotu-nielegalni-migranci-przerzucili-sie-na-inne-szlaki",
         "https://warszawa.wyborcza.pl/warszawa/7,54420,31636213,kaleta-w-muzeum-sztuki-nowoczesnej-probuje-sie-dzieciom-wciskac.html",
         "https://www.medonet.pl/zdrowie-i-wellbeing-pracownikow/stan-zdrowia-pracownikow,na-takim-l4-mozesz-jechac-z-dzieckiem-na-ferie--pamietaj-o-jednym,artykul,81303708.html",
-        "https://www.gazetapolska.pl/29464-czego-boi-sie-tusk"
+        "https://www.gazetapolska.pl/29464-czego-boi-sie-tusk",
+        "https://www.fakt.pl/wydarzenia/polska/warszawa/warszawa-po-marszu-niepodleglosci-zerwal-teczowa-flage-i-zaliczyl-wpadke/6fk6dxn",
+        "https://superbiz.se.pl/wiadomosci/10-tys-zl-na-uchodzce-w-polsce-urzad-do-spraw-cudzoziemcow-ujawnia-kwoty-aa-zu9r-tmde-t7gJ.html"
     ], 'pl'
 
 
@@ -46,3 +48,18 @@ def get_italian_urls():
         "https://www.ilpost.it/2025/02/01/whatsapp-dice-che-oltre-novanta-giornalisti-e-attivisti-sono-stati-spiati-sulla-sua-app/",
         "https://www.ilfoglio.it/politica/2025/02/03/news/abbiamo-speso-meno-di-un-terzo-dei-fondi-del-pnrr-i-dati-di-openpolis-7387399/"
     ], 'it'
+
+
+languages = {
+    'el': get_greek_urls,
+    'pl': get_polish_urls,
+    'en': get_english_urls,
+    'it': get_italian_urls
+}
+
+
+def get_language_urls(language):
+    method = languages.get(language, None)
+    if method is None:
+        raise RuntimeError(f'Invalid language provided! Supported: {languages.keys()}')
+    return method()

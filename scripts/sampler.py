@@ -14,8 +14,8 @@ def main():
         with article.open('r') as f:
             article_data = json.load(f)
 
-        df_data.setdefault('sentence', []).extend(article_data['sat_split'])
-        df_data.setdefault('article_id', []).extend([article_data['title']] * len(article_data['sat_split']))
+        df_data.setdefault('sentence', []).extend(article_data['sentences'])
+        df_data.setdefault('article_id', []).extend([article_data['title']] * len(article_data['sentences']))
 
     df = pd.DataFrame.from_dict(df_data)
     if len(df) > max_sentences:

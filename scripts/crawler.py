@@ -6,7 +6,7 @@ from newsplease import NewsPlease
 import newspaper
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from urls import get_english_urls
+from urls import get_language_urls
 from tqdm import tqdm
 import time
 
@@ -97,7 +97,7 @@ def save_article_content(save_path, article_content, article_idx):
 
 
 def main():
-    urls, language = get_english_urls()
+    urls, language = get_language_urls(language='pl')
     save_path: Path = Path('.', 'crawled', language).resolve()
 
     if not save_path.is_dir():
