@@ -11,17 +11,15 @@ def load_text(text_path: Path):
     if 'sat_split' in article_data:
         return None, None
 
-    if article_data['text'] is not None:
-        return article_data['text'], article_data
-
-    return article_data['maintext'], article_data
+    return article_data['text'], article_data
 
 
 def main():
     model = 'sat-3l-sm'
-    base_path = Path('.', 'crawled').resolve()
+    language = 'el'
+    base_path = Path('.', 'crawled', language).resolve()
 
-    sat = SaT(model, language='el', style_or_domain='ud')
+    sat = SaT(model, language=language, style_or_domain='ud')
     sat.half().to('cuda')
 
     text_paths = list(base_path.glob('*.json'))
@@ -35,7 +33,7 @@ def main():
         article_data['sat_split'] = sentences
 
         with text_path.open('w') as f:
-            json.dump(article_data, f)
+            json.dump(article_data, f, indent=4)
 
 
 if __name__ == '__main__':
