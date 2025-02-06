@@ -27,7 +27,10 @@ def get_english_urls():
     return [
         "https://tribunemag.co.uk/2025/01/how-finlands-left-is-beating-the-far-right",
         "https://tribunemag.co.uk/2025/02/hard-truths-captures-the-anxieties-of-modern-britain",
-        "https://www.theguardian.com/uk/commentisfree",
+        "https://tribunemag.co.uk/2025/01/back-to-blackrock",
+        "https://tribunemag.co.uk/2025/01/solidarity-under-siege",
+        "https://theweek.com/media/phone-hacking-victory-for-prince-harry",
+        "https://theweek.com/environment/should-los-angeles-rebuild-its-fire-prone-neighbourhoods",
         "https://www.theguardian.com/commentisfree/2025/feb/03/why-i-quit-background-noise-phone-silence-writers-retreat",
         "https://www.theguardian.com/commentisfree/2025/feb/02/heathrow-expansion-puts-the-government-on-the-flight-path-to-years-of-trouble-and-strife",
         "https://www.spectator.co.uk/article/ed-miliband-doesnt-understand-how-energy-prices-work/",
@@ -44,8 +47,12 @@ def get_italian_urls():
         "https://contropiano.org/news/ambiente-news/2025/01/28/fermiamo-il-governo-del-ritorno-al-nucleare-0179773",
         "https://www.ilgiornale.it/news/borsa-e-mercati/i-dazi-fanno-tremare-borse-ecco-chi-soffre-pi-e-dove-trovare-2432335.html",
         "https://www.corriere.it/opinioni/25_gennaio_31/social-e-regole-l-insofferenza-contro-l-europa-2c996228-ab72-4166-9091-a7ecda29axlk.shtml",
+        "https://www.corriere.it/sport/25_febbraio_05/pista-bob-milano-cortina-caratteristiche-curiosita-reportage-2f4c1b3e-4ac3-4414-9e25-bc55295dcxlk.shtml",
         "https://beppegrillo.it/il-trasporto-deve-essere-pubblico-e-condiviso/",
+        "https://beppegrillo.it/un-piano-per-i-dazi-doganali/",
         "https://www.ilpost.it/2025/02/01/whatsapp-dice-che-oltre-novanta-giornalisti-e-attivisti-sono-stati-spiati-sulla-sua-app/",
+        "https://www.ilpost.it/2025/02/04/italiano-linguaggio-formale/",
+        "https://www.ilpost.it/2025/02/05/spesa-fondi-soldi-pnrr-ritardi/",
         "https://www.ilfoglio.it/politica/2025/02/03/news/abbiamo-speso-meno-di-un-terzo-dei-fondi-del-pnrr-i-dati-di-openpolis-7387399/"
     ], 'it'
 

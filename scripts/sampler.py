@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def main():
-    language = 'pl'
+    language = 'it'
     base_path: Path = Path('.', 'crawled', language).resolve()
     save_path: Path = Path('.', 'annotation', language).resolve()
     max_sentences: int = 300
