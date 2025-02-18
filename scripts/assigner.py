@@ -4,9 +4,9 @@ import numpy as np
 
 
 def main():
-    annotators = 7
-    annotators_per_sample = 3
-    language = 'en'
+    annotators = 1
+    annotators_per_sample = 1
+    language = 'ua'
     base_path: Path = Path('.', 'annotation', language).resolve()
     save_path: Path = Path('.', 'assignments', language).resolve()
 
@@ -14,6 +14,11 @@ def main():
         save_path.mkdir(parents=True, exist_ok=True)
 
     df = pd.read_csv(base_path.joinpath('dataset.csv'))
+
+    if annotators == 1:
+        df.to_csv(save_path.joinpath(f'ann_0.csv'), index=False)
+        return
+
     assignments = np.random.rand(df.shape[0], annotators).argpartition(annotators_per_sample, axis=1)[:, :annotators_per_sample]
 
     for ann_idx in range(annotators):
