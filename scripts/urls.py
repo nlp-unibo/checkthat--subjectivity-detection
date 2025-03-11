@@ -17,11 +17,16 @@ def get_greek_urls():
 def get_polish_urls():
     return [
         "https://www.rp.pl/kraj/art37748781-coraz-trudniej-sforsowac-granice-po-postawieniu-plotu-nielegalni-migranci-przerzucili-sie-na-inne-szlaki",
-        "https://warszawa.wyborcza.pl/warszawa/7,54420,31636213,kaleta-w-muzeum-sztuki-nowoczesnej-probuje-sie-dzieciom-wciskac.html",
         "https://www.medonet.pl/zdrowie-i-wellbeing-pracownikow/stan-zdrowia-pracownikow,na-takim-l4-mozesz-jechac-z-dzieckiem-na-ferie--pamietaj-o-jednym,artykul,81303708.html",
         "https://www.gazetapolska.pl/29464-czego-boi-sie-tusk",
         "https://www.fakt.pl/wydarzenia/polska/warszawa/warszawa-po-marszu-niepodleglosci-zerwal-teczowa-flage-i-zaliczyl-wpadke/6fk6dxn",
-        "https://superbiz.se.pl/wiadomosci/10-tys-zl-na-uchodzce-w-polsce-urzad-do-spraw-cudzoziemcow-ujawnia-kwoty-aa-zu9r-tmde-t7gJ.html"
+        "https://superbiz.se.pl/wiadomosci/10-tys-zl-na-uchodzce-w-polsce-urzad-do-spraw-cudzoziemcow-ujawnia-kwoty-aa-zu9r-tmde-t7gJ.html",
+        "https://wiadomosci.gazeta.pl/wiadomosci/7,114883,31404032,to-absolutnie-nie-powinno-miec-miejsca-w-gabinecie-lekarskim.html",
+        "https://wiadomosci.wp.pl/wroclaw/czarny-protest-manifestacje-w-wielu-miastach-w-polsce-ile-osob-wzielo-udzial-w-demonstracjach-6043943038128769a",
+        "https://wiadomosci.wp.pl/godek-winna-nie-bede-przepraszac-prosi-o-wsparcie-7129276135721888a",
+        "https://wiadomosci.wp.pl/kontrakty-dla-swoich-tak-sie-zarabia-w-dolnoslaskiej-platformie-7129357450361760a",
+        "https://dorzeczy.pl/kraj/700162/pierwsza-w-polsce-klinika-aborcyjna-powstala-niedaleko-sejmu.html",
+        "https://dorzeczy.pl/opinie/700263/pakt-migracyjny-bault-czy-migranci-zaleja-polske.html"
     ], 'pl'
 
 
@@ -81,12 +86,22 @@ def get_ucranian_urls():
     ], 'ua'
 
 
+def get_romanian_urls():
+    return [
+        "https://pressone.ro/studentii-de-la-sociologie-revoltati-de-cursurile-unui-profesor-candidat-pe-listele-aur-ne-a-spus-ca-femeile-cu-parul-desprins-sunt-in-cautare-de-barbati",
+        "https://stirileprotv.ro/stiri/actualitate/schimbi-de-replici-acide-la-varful-bisericii-ce-spun-romanii-despre-parerile-controversate-ale-lui-ips-teodosie.html",
+        "https://hotnews.ro/au-fost-rusii-implicati-in-alegerile-din-romania-ce-ne-spun-dovezile-publice-o-altfel-de-concluzie-a-unui-cercetator-de-la-universitatea-elvetiana-eth-zurich-1870910",
+        "https://www.vice.com/ro/article/ce-a-insemnat-vice-romania-pentru-noi/"
+    ], "ro"
+
+
 languages = {
     'el': get_greek_urls,
     'pl': get_polish_urls,
     'en': get_english_urls,
     'it': get_italian_urls,
-    'ua': get_ucranian_urls
+    'ua': get_ucranian_urls,
+    'ro': get_romanian_urls
 }
 
 

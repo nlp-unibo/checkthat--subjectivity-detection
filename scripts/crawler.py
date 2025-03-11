@@ -97,7 +97,7 @@ def save_article_content(save_path, article_content, article_idx):
 
 
 def main():
-    urls, language = get_language_urls(language='ua')
+    urls, language = get_language_urls(language='pl')
     save_path: Path = Path('.', 'crawled', language).resolve()
 
     if not save_path.is_dir():

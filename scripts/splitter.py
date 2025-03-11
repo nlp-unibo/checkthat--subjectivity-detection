@@ -32,7 +32,7 @@ def parse_sentences(sentences):
 
 def main():
     model = 'sat-6l-sm'
-    language = 'ua'
+    language = 'pl'
     base_path = Path('.', 'crawled', language).resolve()
 
     sat = SaT(model, language=language, style_or_domain='ud')

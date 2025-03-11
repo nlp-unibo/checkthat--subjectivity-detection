@@ -6,7 +6,7 @@ import numpy as np
 def main():
     annotators = 1
     annotators_per_sample = 1
-    language = 'ua'
+    language = 'ro'
     base_path: Path = Path('.', 'annotation', language).resolve()
     save_path: Path = Path('.', 'assignments', language).resolve()
 
